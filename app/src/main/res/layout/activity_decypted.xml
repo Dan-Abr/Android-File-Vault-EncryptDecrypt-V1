@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Decrypted"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_purple"
+        android:id="@+id/linearLayout3"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="582dp"
+        android:id="@+id/linearLayout"
+        android:background="@android:color/holo_purple"
+        android:layout_below="@+id/linearLayout3"
+        >
+
+
+        <!--#004D40 -->
+
+        <ListView
+            android:id="@+id/listView"
+            android:divider="@color/colorAccent"
+            android:transcriptMode="normal"
+            android:dividerHeight="3dp"
+            android:fadingEdge="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:scrollbarStyle="outsideInset"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img_categlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textViewVault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:textColor="#E0AA05"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_edittext"
+        android:hint="                Voice Based Search"
+        android:textSize="20dp" />
+
+
+
+
+
+
+</RelativeLayout>

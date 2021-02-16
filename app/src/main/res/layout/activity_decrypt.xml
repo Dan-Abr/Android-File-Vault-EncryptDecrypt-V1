@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/black"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FileName"
+
+            android:textSize="27sp"
+            android:layout_marginTop="7dp"
+            android:textColor="#FFFFFF"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            >
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPasswordWrapper"
+                    app:passwordToggleEnabled="true"
+                    android:textColorHint="#0E0D0D">
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </TableRow>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnDecrypt"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:text="Decrypt"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:textSize="16sp"
+                />
+        </TableRow>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
